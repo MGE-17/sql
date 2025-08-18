@@ -193,13 +193,13 @@ ORDER BY vp.vendor_name, vp.product_name;
 This table will contain only products where the `product_qty_type = 'unit'`. 
 It should use all of the columns from the product table, as well as a new column for the `CURRENT_TIMESTAMP`.  
 Name the timestamp column `snapshot_timestamp`. */
-]CREATE TABLE product_units (
-  product_id           INTEGER,
-  product_name         TEXT,
-  product_size         TEXT,
-  product_category_id  INTEGER,
-  product_qty_type     TEXT,
-  snapshot_timestamp   TEXT
+CREATE TABLE product_units (
+    product_id INTEGER,
+    product_name TEXT,
+    product_size TEXT,
+    product_category_id INTEGER,
+    product_qty_type TEXT,
+    snapshot_timestamp TEXT
 );
 
 INSERT INTO
